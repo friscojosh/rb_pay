@@ -11,7 +11,7 @@ pay_by_position <- read_csv("data/rb_pay.csv")
 
 grouped <- pay_by_position %>%
    group_by(year) %>%
-   summarize(rb_pct = mean(rb_pct))
+   summarize(rb_pct = sum(RB) / sum(Total))
 
 write_csv(grouped, "rb_pay_pct.csv")
 
