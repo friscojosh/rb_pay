@@ -38,6 +38,6 @@ grouped %>%
       minor_breaks = NULL,
       labels = scales::percent
    ) +
-   labs(x = "Year", y = "% of cap on RB",
+   labs(x = "Year", y = "% of team spend on RB",
         caption = "Source: overthecap.com") +
    theme_538 + theme(legend.position="none")
